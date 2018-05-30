@@ -34,7 +34,9 @@ function ButtonAppBar(props) {
 							NY TIMES ARTICLE SCRAPER
 						</Typography>
                         <Button color="inherit">HOME</Button>
-						<Button color="inherit">SCRAPE ARTCILES</Button>
+                        <Link href="/getArticles" prefetch>
+                            <Button color="inherit">SCRAPE ARTCILES</Button>
+                        </ Link>    
                         <Link href="/articles" prefetch>
 						    <Button color="inherit">SAVED ARTCILES</Button>
                         </ Link>    

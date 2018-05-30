@@ -1,11 +1,9 @@
-import Link from 'next/link'
+import Button from '@material-ui/core/Button'
+import AppBar from '../components/appbar'
 
 const Index = () => (
 	<div>
-		<p>Hello Next.js</p>
-		<Link href="/articles" prefetch>
-			Go to the Articles
-		</Link>
+		<AppBar />
 	</div>
 );
 

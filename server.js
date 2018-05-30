@@ -4,6 +4,7 @@ const next = require('next')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
 const mongoose = require('mongoose')
+var cheerio = require('cheerio');
 // const db = require("./models")
 
 //define port
@@ -18,7 +19,10 @@ app.prepare().then(() => {
 
 	server.get('*', (req, res) => {
 		handle(req, res);
-	});
+    });
+    
+    // Connect to the Mongo DB
+    mongoose.connect("mongodb://localhost/scraperdb");
 
 	server.listen(3000);
 	//init morgan logger
