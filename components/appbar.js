@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link';
+import fetch from 'isomorphic-unfetch'
 
 const styles = {
     root: {
@@ -34,7 +35,7 @@ function ButtonAppBar(props) {
 							NY TIMES ARTICLE SCRAPER
 						</Typography>
                         <Button color="inherit">HOME</Button>
-                        <Link href="/getArticles" prefetch>
+                        <Link href={{pathname: "/scrape"}}>
                             <Button color="inherit">SCRAPE ARTCILES</Button>
                         </ Link>    
                         <Link href="/articles" prefetch>

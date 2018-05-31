@@ -29,5 +29,24 @@ app.prepare().then(() => {
 	server.use(logger('dev'));
 
 	//enable body-parser
-	server.use(bodyParser.urlencoded({ extended: true }));
+    server.use(bodyParser.urlencoded({ extended: true }));
+    
+    server.get('/scrape', (req, res) => {
+        request('https://www.nytimes.com/', (err, response, html) => {
+            var $ = cheerio.load(html)
+
+            var results = []
+
+            $('.story-heading').each((i, element) => {
+                var link = $(element).children().attr('href')
+
+                var title = $(element).children().text()
+
+                results.push({ title: title, link: link })
+            })
+            console.log(results);
+            res.json(results)
+        });
+    })
+
 });    
