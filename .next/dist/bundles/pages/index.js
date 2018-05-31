@@ -72,10 +72,11 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/appbar.js":
+/***/ "./pages/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("prop-types");
@@ -98,7 +99,7 @@ module.exports =
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_next_link__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_isomorphic_unfetch__ = __webpack_require__("isomorphic-unfetch");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_isomorphic_unfetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_isomorphic_unfetch__);
-var _jsxFileName = "/Users/Home/Bootcamp_Stuff/HomeWork/react-article-scraper-/components/appbar.js";
+var _jsxFileName = "/Users/Home/Bootcamp_Stuff/HomeWork/react-article-scraper-/pages/index.js";
 
 
 
@@ -199,43 +200,7 @@ function ButtonAppBar(props) {
   }, "SAVED ARTCILES")))));
 }
 
-ButtonAppBar.propTypes = {
-  classes: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_2__material_ui_core_styles__["withStyles"])(styles)(ButtonAppBar));
-
-/***/ }),
-
-/***/ "./pages/index.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__material_ui_core_Button__ = __webpack_require__("@material-ui/core/Button");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__material_ui_core_Button___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__material_ui_core_Button__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_appbar__ = __webpack_require__("./components/appbar.js");
-var _jsxFileName = "/Users/Home/Bootcamp_Stuff/HomeWork/react-article-scraper-/pages/index.js";
-
-
-
-
-var Index = function Index() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_appbar__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Object(__WEBPACK_IMPORTED_MODULE_2__material_ui_core_styles__["withStyles"])(styles)(ButtonAppBar));
 
 /***/ }),
 
